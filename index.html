@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Survey-page</title>
+  </head>
+  <body>
+    <main>
+      <h1>Feedback Form</h1>
+
+      <form action="POST" method="POST">
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name" />
+
+        <label for="email">Email</label>
+        <input type="text" name="email" id="email" />
+
+        <label for="batch">Choose your batch</label>
+        <select name="" id="batch">
+          <option value="Winter2022">Winter2022</option>
+          <option value="Spring2022">Spring2022</option>
+          <option value="Autumn2022">Autumn2022</option>
+        </select>
+
+        <p>Did you manage to finish all the exercises during week 1</p>
+        <input type="radio" name="exercise" id="yes" value="Yes" />
+        <label for="yes">Yes</label>
+        <input type="radio" name="exercise" id="no" value="No" checked />
+        <label for="no">No</label>
+
+        <p>Choose your favorite exercises</p>
+        <input
+          type="checkbox"
+          name="favorite"
+          id="favorite"
+          value="CSS selector"
+        />
+        <label for="favorite">CSS selector</label>
+
+        <input
+          type="checkbox"
+          name="favorite"
+          id="favorite"
+          value="Book page"
+        />
+        <label for="favorite">Book page</label>
+
+        <input
+          type="checkbox"
+          name="favorite"
+          id="favorite"
+          value="Belfast inter"
+        />
+        <label for="favorite">Belfast international</label>
+
+        <input type="checkbox" name="favorite" value="Crownsnest" />
+        <label for="favorite">Crownsnest</label>
+
+        <input
+          type="checkbox"
+          name="favorite"
+          id="favorite"
+          value="Google page"
+        />
+        <label for="favorite">Goole page</label>
+
+        <input
+          type="checkbox"
+          name="favorite"
+          id="favorite"
+          value="Documention"
+        />
+        <label for="favorite">Documentation</label>
+
+        <input
+          type="checkbox"
+          name="favorite"
+          id="favorite"
+          value="portfolio"
+        />
+        <label for="favorite">Aneta Webbie portfolio</label>
+
+        <br />
+        <label for="textarea"></label>
+        <textarea
+          name="textarea"
+          id="textarea"
+          cols="30"
+          rows="10"
+          placeholder="write your feedback"
+        ></textarea>
+
+        <input type="submit" name="submit" value="submit" />
+      </form>
+    </main>
+  </body>
+</html>
